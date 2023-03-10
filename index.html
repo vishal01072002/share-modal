@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>share modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+
+      <div class="content">
+        <img src="profile.jpg" alt="" class="profile" />
+
+        <h2>Vishal Kumar</h2>
+
+        <h3>Web Developer | DSA</h3>
+
+        <div class="btn-box">
+          <button class="share-btn btns" onclick="openModal()">
+            <i class="fa-solid fa-share"></i> Share My Profile
+          </button>
+
+          <button class="follow-btn btns">Follow Me</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="share-modal">
+      <div class="share-head">
+        <h3>Share My Profile</h3>
+        <i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+      </div>
+
+      <h3 class="sub-heading">Share this via</h3>
+
+      <div class="icons">
+        <a href="#" class="icon" id="facebook">
+          <i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/_._lucifer_1_/" class="icon" id="instagram" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="icon" id="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="icon" id="telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script
+      src="https://kit.fontawesome.com/34c85918b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
